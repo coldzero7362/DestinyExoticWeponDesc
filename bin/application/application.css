@@ -1,0 +1,18 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#icon{
+	-fx-background-image: url("/src/List/Exotic.png"); 
+	-fx-background-size: 100% 100%
+	
+}
+
+#back{
+	-fx-background-image: url('img/backg.png');
+}
+.sibalsibaldoera{
+	-fx-background-images: url(/src/List/Exotic.png);
+	-fx-background-size: 100% 100%
+}
+.weaponicon{
+	-fx-border-color: white;
+	-fx-border-width : 50px;
+}

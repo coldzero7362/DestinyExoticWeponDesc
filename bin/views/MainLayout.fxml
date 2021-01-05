@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="821.0" prefWidth="1230.0" style="-fx-background-color: rgb(51,51,51);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
+   <children>
+      <Pane layoutX="918.0" layoutY="42.0" prefHeight="757.0" prefWidth="282.0" style="-fx-background-color: rgb(100,100,100);">
+         <children>
+            <ListView fx:id="list" layoutX="9.0" layoutY="14.0" onEditStart="#initialize" prefHeight="683.0" prefWidth="265.0" />
+            <Button layoutX="217.0" layoutY="711.0" mnemonicParsing="false" onAction="#view" prefHeight="32.0" prefWidth="51.0" style="-fx-background-color: rgb(150,150,150); -fx-background-radius: 5.0px;" text="보기" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="17.0" prefHeight="500.0" prefWidth="783.0" style="-fx-background-image: url('a.png');" styleClass="back">
+         <children>
+            <Pane layoutX="23.0" layoutY="23.0" prefHeight="97.0" prefWidth="97.0" style="-fx-background-color: rgba(150,150,150,0.5);" />
+            <Pane layoutX="36.0" layoutY="185.0" prefHeight="62.0" prefWidth="60.0" style="-fx-background-color: rgba(150,150,150,0.5); -fx-background-radius: 50px;">
+               <children>
+                  <ImageView fx:id="Uniquelicon" fitHeight="80.0" fitWidth="88.0" layoutX="-14.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true" styleClass="Uni" />
+               </children>
+            </Pane>
+            <ImageView fx:id="weaponicon" cache="true" fitHeight="94.0" fitWidth="94.0" layoutX="23.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" styleClass="icon" />
+            <Label fx:id="WeaponNameLable" layoutX="130.0" layoutY="22.0" styleClass="weaponName" text="Weapon Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="WeaponexplanLable" layoutX="130.0" layoutY="86.0" styleClass="roear" text="Weapon Lore" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="weaponTypeLable" layoutX="130.0" layoutY="61.0" styleClass="weaponType" text="Weapon Type" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="UniqueNameLable" layoutX="117.0" layoutY="187.0" text="본질" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="UniqueLable" layoutX="115.0" layoutY="216.0" styleClass="peck" text="본질 설명" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="21.0" layoutY="287.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: rgba(150,150,150,0.5); -fx-background-radius: 50px;" />
+            <ImageView fx:id="Specialpeckicon" fitHeight="90.0" fitWidth="90.0" layoutX="21.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" styleClass="sp" />
+            <Label fx:id="SpecialpuckName" layoutX="118.0" layoutY="301.0" text="고유퍽" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Specialpuck" layoutX="116.0" layoutY="332.0" styleClass="peck2" text="고유퍽 설명" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="UniqueNameLable2" layoutX="121.0" layoutY="393.0" text="걸작" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="mastermakeQuest" layoutX="118.0" layoutY="424.0" styleClass="peck" text="촉매제 퀘스트" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="mastermakeEffect" layoutX="120.0" layoutY="468.0" styleClass="peck2" text="촉매제 효과" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="getwayLabel" layoutX="29.0" layoutY="148.0" styleClass="getter" text="HOW TO GET" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Pane layoutX="24.0" layoutY="407.0" prefHeight="72.0" prefWidth="74.0" style="-fx-background-color: rgba(150,150,150,0.5);" />
+            <ImageView fx:id="mastermakeIcon" fitHeight="108.0" fitWidth="101.0" layoutX="11.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true" styleClass="masterPiece" />
+            <ImageView fx:id="weaponicon1" cache="true" fitHeight="94.0" fitWidth="94.0" layoutX="25.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" styleClass="icon" />
+         </children>
+      </Pane>
+      <Label layoutX="918.0" layoutY="14.0" text="List" textFill="WHITE">
+         <font>
+            <Font name="Estrangelo Edessa" size="21.0" />
+         </font>
+      </Label>
+      <Pane layoutX="27.0" layoutY="557.0" prefHeight="234.0" prefWidth="374.0" style="-fx-background-color: rgba(150,150,150,0.5);" />
+      <ImageView fx:id="Status" fitHeight="234.0" fitWidth="421.0" layoutX="27.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true" styleClass="Status" />
+      <Label fx:id="Dammy" layoutX="849.0" layoutY="28.0" style="-fx-background-color: rgb(51,51,51);" styleClass="s" text="더미" />
+      <Pane layoutX="479.0" layoutY="565.0" prefHeight="180.0" prefWidth="321.0" style="-fx-background-color: rgba(150,150,150,0.5);" />
+      <ImageView fx:id="details" fitHeight="241.0" fitWidth="374.0" layoutX="472.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true" styleClass="inGame" />
+      <Label layoutX="472.0" layoutY="531.0" text="인게임" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="531.0" text="Status" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
